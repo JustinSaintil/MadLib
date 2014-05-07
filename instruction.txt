@@ -1,0 +1,23 @@
+This program (Mad Lib Generator) is designed to generate sentences using random nouns, verbs, conjunctions, adjectives, and other grammatical anomalies using predefined variables and grouping them in a logical sentence structure.
+
+1) Create .py program involving wx.python. We will make an interactive panel in which the sentences will appear and the user can set preferences for variables in creating sentences.
+
+2) Work with git.
+MadLib.py program. Collaborate using laura and JustinWork branches, and then merge to master branch. 
+
+
+3) Set checkboxes for the user to check which type of noun they want (ie - vehicle: car, helicopter, boat; animal: raccoon, dog, bumblebee)
+
+
+Requirements:
+
+Handles user input errors (capital letters, str, int, Chinese characters)
+Use:
+	1 Function
+	1 Loop, List, Tuple, Dict, OR Numpy Array
+	1 Module (besides random)
+	1 Git repository
+	1 Class
+	1 Data file
+	1 wx Python
+	1 Python concept/function we didn't use in class
