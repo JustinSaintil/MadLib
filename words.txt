@@ -10,11 +10,23 @@ Nouns:
 		jet
 		rocket
 		shuttle
+		airplane
+		tank
+		bicycle 
 
 	Animals:
 		
 		cheetah
 		leopard
+		lobster
+		Sphinx
+		Mosquito
+		turtle
+		dog
+		cat
+		lion
+		elephant
+		kangaroo
 
 
 
@@ -41,14 +53,89 @@ Nouns:
 		tile
 		yacht
 		algae
-
+		quilt
+		element 
+		custard
+		Sled
+		
 
 	Places:
+		restaurant
+		House
+		Chicago
+		Illinois
+		New Jersey
+		PRISMS
+		RDFZ
+		United States of America
+		China
+		
 
 
 	Colors:
-
+		red
+		purple
+		blue
+		green
+		whitee
+		yellow
+		gold
+		magenta
+		black
+		brown
+		gray
+		pink
+		indigo 
 		
+		
+		
+	Names:
+		Bill
+		Cody
+		Jack
+		Richard
+		Jessica
+		Amy
+		Lilly
+		Eric
+		Misha
+		The Big Labowski
+		Joe
+		name = raw_input("Your Name")
+		Aliea 
+		Justin
+		Laura
+		Avrilla Keena
+		Anmol
+		William
+		Chloe
+		Tiffany
+		Lesley
+		
+	Verbs:
+		hit
+		walk
+		run
+		smack
+		eat
+		watch
+		punch
+		throw
+		climb 
+		see
+		leap
+		lie 
+	Adjective:
+		large
+		small
+		cute
+		ugly
+		fat
+		skinny
+		smart
+		stupid
+		
+
 
 
 
