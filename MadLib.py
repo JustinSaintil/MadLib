@@ -7,10 +7,17 @@ from buttonmodule import *
 vehicle = random.choice(vehicles)
 names = random.choice(names)
 objects = random.choice(objects)
-places = random.choice(places)
-verbs = random.choice(verbs)
+place = random.choice(places)
+verb = random.choice(verbs)
 adj = random.choice(adj)
+sent = random.choice(sent)
 
+vehicle = @
+name = $
+objects = \
+place = :
+verb = _
+adj = '
 
 app = wx.App(False) 
 frame = MadLibFrame(None)
