@@ -2,6 +2,8 @@
 
 import wx
 from buttonmodule import *
+from TextBox import *
+from  CheckBoxes import *
 # * imports everything in the module
 
 
