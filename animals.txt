@@ -1,0 +1,11 @@
+cheetah
+leopard
+lobster
+Sphinx
+mosquito
+turtle
+dog
+cat
+lion
+elephant
+kangaroo

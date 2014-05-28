@@ -1,0 +1,12 @@
+hit
+walk
+run
+smack
+eat
+watch
+punch
+throw
+climb 
+see
+leap
+lie 

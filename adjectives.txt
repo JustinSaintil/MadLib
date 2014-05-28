@@ -1,0 +1,8 @@
+large
+small
+cute
+ugly
+fat
+skinny
+smart
+stupid

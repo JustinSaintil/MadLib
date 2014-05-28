@@ -1,0 +1,22 @@
+Bill
+Cody
+Jack
+Richard
+Jessica
+Amy
+Lily
+Eric
+Misha
+The Big Lebowski
+Joe
+name = raw_input("Your Name")
+Aliea 
+Justin
+Laura
+Avrilla 
+Keena
+Anmol
+William
+Chloe
+Tiffani
+Lesley

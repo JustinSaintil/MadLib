@@ -1,0 +1,13 @@
+helicopter
+SUV	
+van
+motorcycle
+speedboat
+tricycle
+Segway
+jet
+rocket
+shuttle
+airplane
+tank
+bicycle 
