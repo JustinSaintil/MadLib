@@ -9,17 +9,19 @@ from  CheckBoxes import *
 vehicle = random.choice(vehicles)
 names = random.choice(names)
 objects = random.choice(objects)
+animals = random.choice(animals)
 place = random.choice(places)
 verb = random.choice(verbs)
 adj = random.choice(adj)
 sent = random.choice(sent)
 
-vehicle = @
-name = $
-objects = \
-place = :
-verb = _
-adj = '
+vehicle = "@"
+name = "$"
+objects = "\"
+animals = "]"
+place = ":"
+verb = "_"
+adj = " ' "
 
 app = wx.App(False) 
 frame = MadLibFrame(None)
@@ -29,20 +31,20 @@ app.MainLoop()
 """
 Sentence Structures:
 
-NAME hit the NOUN with a NOUN on the way home from PLACE.
+$ hit the @ with a / on the way home from :.
 
-NAME will VERB if NAME won’t VERB.
+$ will _ if $ won’t _.
 
-When NAME rode the ANIMAL NOUN / VEHICLE NOUN  to the PLACE, the OBJECT NOUN was forgotten at PLACE.
+When $ rode the ] to the :, the \ was forgotten at :.
 
-A/an ADJECTIVE   VEHICLE NOUN / ANIMAL NOUN  is a great way to ACTION VERB to PLACE.
+A/an ' @ is a great way to _ to :.
 
-The ADJECTIVE    ANIMAL NOUN learned to ACTION VERB by watching the ADJECTIVE    OBJECT NOUN   ACTION VERB.
+The ' ] learned to _ by watching the ' \ _.
 
-NAME and NAME  will ACTION VERB when they hear that the OBJECT NOUN   ACTION VERB.
+$ and $ will _ when they hear that the \ _.
 
- It’d be rude for NAME not to buy me a/an ADJECTIVE    OBJECT / VEHICLE / ANIMAL NOUN.
+It’d be rude for $ not to buy me a/an ' ].
 
-My PLACE is a/an ADJECTIVE place to ACTION VERB while I do homework.
+My : is a/an ' place to _ while I do homework.
 
-NAME thinks that the ADJECTIVE    OBJECT NOUN is cool because it can ACTION VERB.
+$ thinks that the ' \ is cool because it can _.
