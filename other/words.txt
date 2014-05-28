@@ -1,0 +1,145 @@
+Nouns:
+	Vehicles:
+		helicopter
+		SUV		
+		van
+		motorcycle
+		speedboat
+		tricycle
+		Segway
+		jet
+		rocket
+		shuttle
+		airplane
+		tank
+		bicycle 
+
+	Animals:
+		
+		cheetah
+		leopard
+		lobster
+		Sphinx
+		mosquito
+		turtle
+		dog
+		cat
+		lion
+		elephant
+		kangaroo
+
+
+
+	Objects:
+
+		bulb
+		grill
+		mascara
+		pedestrian
+		shell
+		vinyl
+		athlete
+		horn
+		whip
+		bomb
+		bugle
+		match
+		quarter
+		teacher
+		thumb
+		comic
+		lemonade
+		soup
+		tile
+		yacht
+		algae
+		quilt
+		element 
+		custard
+		sled
+		
+
+	Places:
+		restaurant
+		House
+		Chicago
+		Illinois
+		New Jersey
+		PRISMS
+		RDFZ
+		United States of America
+		China
+		
+
+
+	Colors:
+		red
+		purple
+		blue
+		green
+		white
+		yellow
+		gold
+		magenta
+		black
+		brown
+		gray
+		pink
+		indigo 
+		
+		
+		
+	Names:
+		Bill
+		Cody
+		Jack
+		Richard
+		Jessica
+		Amy
+		Lily
+		Eric
+		Misha
+		The Big Lebowski
+		Joe
+		name = raw_input("Your Name")
+		Aliea 
+		Justin
+		Laura
+		Avrilla 
+		Keena
+		Anmol
+		William
+		Chloe
+		Tiffani
+		Lesley
+		
+	Verbs:
+		hit
+		walk
+		run
+		smack
+		eat
+		watch
+		punch
+		throw
+		climb 
+		see
+		leap
+		lie 
+		
+	Adjective:
+		large
+		small
+		cute
+		ugly
+		fat
+		skinny
+		smart
+		stupid
+		
+
+		
+
+
+
+
