@@ -18,31 +18,31 @@ class MadLibFrame(wx.Frame):
 		
 		names = []
 		file = open('names.txt', 'r')
-		for line in file
+		for line in file:
 			self.names.append(line.strip())
 		file.close()
 		
 		objects = [] 
 		file = open('objects.txt', 'r')
-		for line in file
+		for line in file:
 			self.names.append(line.strip())
 		file.close()
 		
 		places = []
 		file = open('places.txt', 'r')
-		for line in file 
+		for line in file:
 			self.places.append(line.strip())
 		file.close() 
 		
 		vehicles = []
 		file = open('vehicles.txt', 'r')
-		for line in file
+		for line in file:
 			self.places.append(line.strip())
 		file.close()
 		
 		verbs = []
 		file = open('verbs.txt', 'r')
-		for line in file
+		for line in file:
 			self.verbs.append(line.strip())
 		file.close()
 		
