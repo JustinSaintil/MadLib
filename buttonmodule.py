@@ -1,52 +1,53 @@
 import wx
+import random
 
 class MadLibFrame(wx.Frame):
 	def __init__(self, parent):
 		wx.Frame.__init__(self, parent, wx.ID_ANY, "Mad Lib Game")
 		self.panel = wx.Panel(self)
 		
-		adjectives = []
+		self.adjectives = []
 		file = open('adjectives.txt', 'r')
 		for line in file:
 			self.adjectives.append(line.strip())
 		file.close()
 
-		animals = []
+		self.animals = []
 		file = open('animals.txt', 'r')
 		for line in file:
 			self.animals.append(line.strip())
 		file.close()
 
-		names = []
+		self.names = []
 		file = open('names.txt', 'r')
 		for line in file:
 			self.names.append(line.strip())
 		file.close()
 
-		objects = []
+		self.objects = []
 		file = open('objects.txt', 'r')
 		for line in file:
-			self.names.append(line.strip())
+			self.objects.append(line.strip())
 		file.close()
 
-		places = []
+		self.places = []
 		file = open('places.txt', 'r')
 		for line in file:
 			self.places.append(line.strip())
 		file.close()
 
-		vehicles = []
+		self.vehicles = []
 		file = open('vehicles.txt', 'r')
 		for line in file:
-			self.places.append(line.strip())
+			self.vehicles.append(line.strip())
 		file.close()
 
-		verbs = []
+		self.verbs = []
 		file = open('verbs.txt', 'r')
 		for line in file:
 			self.verbs.append(line.strip())
 		file.close()
-		self.panel = wx.Panel(self)
+
 		self.heading = wx.StaticText(self.panel, label='Welcome To the Mad Lib Game', pos=(200, 15))
 		wx.StaticLine(self.panel, pos=(200, 45), size=(200,2))
 		self.btnClickMe = wx.Button(self.panel, label = "Random", pos = (20,100), size=(200,20))
@@ -59,46 +60,47 @@ class MadLibFrame(wx.Frame):
 		heading2 = wx.StaticText(self.panel, label='How Would You like Your Adjectives?', pos=(200, 150), style=wx.TE_RICH)
 		heading3 = wx.StaticText(self.panel, label='How Would You like Your Verbs?', pos=(200, 300), style=wx.TE_RICH)
 
-		self.btnClickMe.Bind(wx.EVT_BUTTON, self.OnClickMe)
-		self.btnClickMe2.Bind(wx.EVT_BUTTON, self.OnClickMe2)
-		self.btnClickMe3.Bind(wx.EVT_BUTTON, self.OnClickMe3)
-		self.btnClickMe4.Bind(wx.EVT_BUTTON, self.OnClickMe4)
-		self.btnClickMe5.Bind(wx.EVT_BUTTON, self.OnClickMe5)
-		self.btnClickMe6.Bind(wx.EVT_BUTTON, self.OnClickMe6)
+		self.btnClickMe.Bind(wx.EVT_BUTTON, self.OnNounRandom)
+#	self.btnClickMe2.Bind(wx.EVT_BUTTON, self.OnNounChoose)
+		self.btnClickMe3.Bind(wx.EVT_BUTTON, self.OnAdjectiveRandom)
+#		self.btnClickMe4.Bind(wx.EVT_BUTTON, self.OnAdjectiveChoose)
+		self.btnClickMe5.Bind(wx.EVT_BUTTON, self.OnVerbsRandom)
+			#		self.btnClickMe6.Bind(wx.EVT_BUTTON, self.OnVerbsChoose)
 
 
 	
-		def OnClickMe(self,e):
-			animals = random.choice(self.animals)
-			names = random.choice(self.names)
-			objects = random.choice(self.objects)
-			places = random.choice(self.places)
-			vehicles = random.choice(self.vehicles)
-			print 'Animals:', animals
-			print 'Names', names
-			print 'Objects', objects
-			print 'Places:', places
-			print 'Vehicles:', vehicles
+	def OnNounRandom(self,e):
+		self.animal = random.choice(self.animals)
+		self.name = random.choice(self.names)
+		self.object = random.choice(self.objects)
+		self.place = random.choice(self.places)
+		self.vehicle = random.choice(self.vehicles)
+		print 'Animal:', self.animal
+		print 'Name:', self.name
+		print 'Object:', self.object
+		print 'Place:', self.place
+		print 'Vehicle:', self.vehicle
 
 
 	#def OnClickMe2(self,e):
 #---------------------------------
 
-		def OnClickMe3(self,e):
-			adjectives = random.choice(self.adjectives)
-			print 'Adjectives:', adjectives
+	def OnAdjectiveRandom(self,e):
+		self.adjective = random.choice(self.adjectives)
+		print 'Adjective:', self.adjective
 
 	#def OnClickMe4(self,e):
 #---------------------------------
 
-		def OnClickMe5(self, e):
-			verbs = random.choice(self.verbs)
-			print 'Verbs:', verbs 
+	def OnVerbsRandom(self, e):
+		self.verb = random.choice(self.verbs)
+		print 'Verb:', self.verb
 
 	#def OnClickMe6(self, e)
 #-------------------------------
+myApp = wx.App(False)
+frame = MadLibFrame(None)
 
+frame.Show(True)
 
-		frame.Show(True)
-
-		myApp.MainLoop()
+myApp.MainLoop()
