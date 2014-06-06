@@ -47,6 +47,12 @@ class MadLibFrame(wx.Frame):
 		for line in file:
 			self.verbs.append(line.strip())
 		file.close()
+		
+		self.sent = []
+		file = open('sent.txt', 'r')
+		for line in file:
+			self.sent.append(line.strip())
+		file.close()
 
 		self.heading = wx.StaticText(self.panel, label='Welcome To the Mad Lib Game', pos=(200, 15))
 		wx.StaticLine(self.panel, pos=(200, 45), size=(200,2))
@@ -58,7 +64,7 @@ class MadLibFrame(wx.Frame):
 		self.btnClickMe6 = wx.Button(self.panel, label = "Choose", pos = (300,300), size=(200,20))	
 		heading = wx.StaticText(self.panel, label='How Would You like Your nouns?', pos=(200, 60), style=wx.TE_RICH)
 		heading2 = wx.StaticText(self.panel, label='How Would You like Your Adjectives?', pos=(200, 150), style=wx.TE_RICH)
-		heading3 = wx.StaticText(self.panel, label='How Would You like Your Verbs?', pos=(200, 300), style=wx.TE_RICH)
+		heading3 = wx.StaticText(self.panel, label='How Would You like Your Verbs?', pos=(200, 260), style=wx.TE_RICH)
 
 		self.btnClickMe.Bind(wx.EVT_BUTTON, self.OnNounRandom)
 #	self.btnClickMe2.Bind(wx.EVT_BUTTON, self.OnNounChoose)
@@ -80,6 +86,7 @@ class MadLibFrame(wx.Frame):
 		print 'Object:', self.object
 		print 'Place:', self.place
 		print 'Vehicle:', self.vehicle
+		print 'Sentences:', self.sent
 
 
 	#def OnClickMe2(self,e):
@@ -104,3 +111,6 @@ frame = MadLibFrame(None)
 frame.Show(True)
 
 myApp.MainLoop()
+
+
+
